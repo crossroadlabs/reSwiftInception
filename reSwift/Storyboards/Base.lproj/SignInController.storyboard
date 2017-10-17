@@ -80,7 +80,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG0-Ay-4FS">
-                                <rect key="frame" x="203.5" y="454" width="127" height="36"/>
+                                <rect key="frame" x="216.5" y="454" width="114" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="ukL-TW-PU9"/>
                                 </constraints>
