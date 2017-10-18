@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKg-QU-L40" userLabel="top">
-                                <rect key="frame" x="0.0" y="20" width="375" height="318"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImg" translatesAutoresizingMaskIntoConstraints="NO" id="jlS-E0-Yyq">
                                         <rect key="frame" x="137" y="70" width="100" height="100"/>
@@ -47,7 +47,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-d8-b1z">
-                                        <rect key="frame" x="154.5" y="189.5" width="66.5" height="22.5"/>
+                                        <rect key="frame" x="151" y="189.5" width="74" height="22.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22.5" id="LmE-F9-4Rv"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N60-7A-c6V">
-                                        <rect key="frame" x="152.5" y="222" width="71.5" height="16"/>
+                                        <rect key="frame" x="148" y="222" width="79" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="TN8-Aa-hlr"/>
                                         </constraints>
@@ -71,13 +71,13 @@
                                                 <rect key="frame" x="-1" y="0.0" width="125.5" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="071-zv-YDS">
-                                                        <rect key="frame" x="20" y="8" width="42" height="29.5"/>
+                                                        <rect key="frame" x="20" y="11.5" width="47" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stargazers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mss-LJ-94Q">
-                                                        <rect key="frame" x="20" y="37.5" width="67" height="16"/>
+                                                        <rect key="frame" x="20" y="34" width="73.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -95,13 +95,13 @@
                                                 <rect key="frame" x="124.5" y="0.0" width="126" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyd-ou-Az3">
-                                                        <rect key="frame" x="19.5" y="8" width="42" height="29.5"/>
+                                                        <rect key="frame" x="19.5" y="11.5" width="47.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watchers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-oH-Pap">
-                                                        <rect key="frame" x="19.5" y="37.5" width="59" height="16"/>
+                                                        <rect key="frame" x="19.5" y="34" width="65.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -124,13 +124,13 @@
                                                 <rect key="frame" x="250.5" y="0.0" width="125.5" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-V3-cti">
-                                                        <rect key="frame" x="20" y="8" width="42" height="29.5"/>
+                                                        <rect key="frame" x="20" y="11.5" width="47.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN8-C5-yy6">
-                                                        <rect key="frame" x="20" y="37.5" width="35" height="16"/>
+                                                        <rect key="frame" x="20" y="34" width="38.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -166,23 +166,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-fn-sfe">
-                                        <rect key="frame" x="0.0" y="34" width="100" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="wxl-77-c42"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="20"/>
-                                        <state key="normal" title="&lt; BACK">
-                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="jlS-E0-Yyq" firstAttribute="top" secondItem="Scc-fn-sfe" secondAttribute="bottom" id="0mL-lH-XGB"/>
                                     <constraint firstItem="N60-7A-c6V" firstAttribute="centerX" secondItem="lKg-QU-L40" secondAttribute="centerX" id="Nqb-UN-gRO"/>
                                     <constraint firstItem="jlS-E0-Yyq" firstAttribute="centerX" secondItem="lKg-QU-L40" secondAttribute="centerX" id="Uyi-yc-LQ0"/>
-                                    <constraint firstItem="Scc-fn-sfe" firstAttribute="leading" secondItem="lKg-QU-L40" secondAttribute="leading" id="VpL-9V-Q2Z"/>
                                     <constraint firstItem="Ssz-d8-b1z" firstAttribute="centerX" secondItem="lKg-QU-L40" secondAttribute="centerX" id="YOZ-n2-36H"/>
                                     <constraint firstAttribute="bottom" secondItem="KV3-Wo-9Lf" secondAttribute="bottom" id="Yv7-JF-CjT"/>
                                     <constraint firstItem="KV3-Wo-9Lf" firstAttribute="top" secondItem="N60-7A-c6V" secondAttribute="bottom" constant="17" id="a2c-iE-3sl"/>
@@ -194,17 +182,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yj-F1-tBi">
-                                <rect key="frame" x="0.0" y="338" width="375" height="30.5"/>
+                                <rect key="frame" x="0.0" y="318" width="375" height="32.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1m-2k-2jQ">
-                                <rect key="frame" x="0.0" y="368.5" width="375" height="45.5"/>
+                                <rect key="frame" x="0.0" y="350.5" width="375" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-fT-Ds4">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="48"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="cem-kw-B1v">
-                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="UHf-ds-tEW"/>
@@ -212,7 +200,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq3-px-ziK">
-                                                <rect key="frame" x="58" y="15" width="39" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="42.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -232,10 +220,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLO-hM-JNL">
-                                        <rect key="frame" x="186.5" y="0.0" width="188" height="45.5"/>
+                                        <rect key="frame" x="186.5" y="0.0" width="188" height="48"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="package" translatesAutoresizingMaskIntoConstraints="NO" id="wFz-fu-6t8">
-                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="73C-wp-RTg"/>
@@ -243,7 +231,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAi-TF-oU9">
-                                                <rect key="frame" x="58" y="15" width="24" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="27.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -276,13 +264,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahj-2Y-HTx">
-                                <rect key="frame" x="0.0" y="413" width="375" height="45.5"/>
+                                <rect key="frame" x="0.0" y="397.5" width="375" height="48.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uiy-u6-aRU">
-                                        <rect key="frame" x="0.0" y="0.5" width="187.5" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="187.5" height="48.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-bh-mvm">
-                                                <rect key="frame" x="19" y="14" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="4Bn-hJ-tac"/>
@@ -290,7 +278,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1y-sZ-8fJ">
-                                                <rect key="frame" x="58" y="15.5" width="52" height="16"/>
+                                                <rect key="frame" x="58" y="17" width="55.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -310,10 +298,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUw-cJ-GXe">
-                                        <rect key="frame" x="186.5" y="0.5" width="188" height="45.5"/>
+                                        <rect key="frame" x="186.5" y="0.5" width="188" height="48.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hierarchy" translatesAutoresizingMaskIntoConstraints="NO" id="rvW-en-eCd">
-                                                <rect key="frame" x="19" y="14" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="bjU-oa-03h"/>
@@ -321,7 +309,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Branch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT1-9J-RGf">
-                                                <rect key="frame" x="58" y="15.5" width="57" height="16"/>
+                                                <rect key="frame" x="58" y="17" width="57" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -354,13 +342,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R3-Df-w5s">
-                                <rect key="frame" x="0.0" y="457.5" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="445" width="375" height="47.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-3w-QbQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="47.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="SxE-sW-5J0">
-                                                <rect key="frame" x="19" y="13.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="Jgf-dT-Isq"/>
@@ -368,7 +356,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/11/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aoe-z9-Jkp">
-                                                <rect key="frame" x="58" y="15" width="56.5" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="55.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -388,10 +376,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJp-kf-f9c">
-                                        <rect key="frame" x="186.5" y="0.0" width="188" height="45"/>
+                                        <rect key="frame" x="186.5" y="0.0" width="188" height="47.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screwdriverAndWrenchCrossed" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-70-Bkn">
-                                                <rect key="frame" x="19" y="13.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="D4M-UY-AM1"/>
@@ -399,7 +387,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.26MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-DU-9Ba">
-                                                <rect key="frame" x="58" y="15" width="49.5" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="51.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -432,17 +420,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cM-3c-RUW" userLabel="mid">
-                                <rect key="frame" x="0.0" y="502.5" width="375" height="30.5"/>
+                                <rect key="frame" x="0.0" y="492.5" width="375" height="32.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRY-VG-bo8">
-                                <rect key="frame" x="0.0" y="533" width="375" height="45.5"/>
+                                <rect key="frame" x="0.0" y="525" width="375" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-ar-Cul">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="bFl-hF-I5P">
-                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="H07-Sa-ed7"/>
@@ -450,7 +438,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ovners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc2-kt-hn2">
-                                                <rect key="frame" x="58" y="15" width="45" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="49.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -479,13 +467,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJx-yK-Ubd">
-                                <rect key="frame" x="0.0" y="577.5" width="375" height="45.5"/>
+                                <rect key="frame" x="0.0" y="572" width="375" height="48.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrc-Ue-mxX">
-                                        <rect key="frame" x="0.0" y="0.5" width="375" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="375" height="48.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-7H-0sU">
-                                                <rect key="frame" x="19" y="14" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="15.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="1YU-i9-xzv"/>
@@ -493,7 +481,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-PP-SN2">
-                                                <rect key="frame" x="58" y="15.5" width="42.5" height="16"/>
+                                                <rect key="frame" x="58" y="17" width="46.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -522,13 +510,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPb-8z-ain">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="619.5" width="375" height="47.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mc-GQ-pmf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="47.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="GBU-Qt-3q2">
-                                                <rect key="frame" x="19" y="13.5" width="21" height="18"/>
+                                                <rect key="frame" x="19" y="14.5" width="21" height="18"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="21" id="d5F-pg-HSo"/>
@@ -536,7 +524,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijt-h2-9cT">
-                                                <rect key="frame" x="58" y="15" width="40" height="16"/>
+                                                <rect key="frame" x="58" y="16" width="41.5" height="16"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -572,7 +560,7 @@
                             <constraint firstItem="lKg-QU-L40" firstAttribute="height" secondItem="5Ma-D7-r1c" secondAttribute="height" multiplier="318:667" id="2YT-6c-OM0"/>
                             <constraint firstItem="tRY-VG-bo8" firstAttribute="trailing" secondItem="YH5-zN-phz" secondAttribute="trailing" id="3Ye-BG-A76"/>
                             <constraint firstItem="IPb-8z-ain" firstAttribute="bottom" secondItem="YH5-zN-phz" secondAttribute="bottom" id="4bX-8u-4ES"/>
-                            <constraint firstItem="lKg-QU-L40" firstAttribute="top" secondItem="YH5-zN-phz" secondAttribute="top" id="6QX-PT-vpo"/>
+                            <constraint firstItem="lKg-QU-L40" firstAttribute="top" secondItem="5Ma-D7-r1c" secondAttribute="top" id="6QX-PT-vpo"/>
                             <constraint firstItem="0Yj-F1-tBi" firstAttribute="top" secondItem="lKg-QU-L40" secondAttribute="bottom" id="6wu-aZ-W7L"/>
                             <constraint firstItem="p1m-2k-2jQ" firstAttribute="trailing" secondItem="YH5-zN-phz" secondAttribute="trailing" id="AEJ-N4-Dxv"/>
                             <constraint firstItem="nJx-yK-Ubd" firstAttribute="height" secondItem="p1m-2k-2jQ" secondAttribute="height" id="Cze-tZ-MQD"/>

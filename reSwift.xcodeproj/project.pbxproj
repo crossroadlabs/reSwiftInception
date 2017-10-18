@@ -18,6 +18,8 @@
 		4446DAFD1F97B8F300B4CE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */; };
 		4446DAFE1F97B8FE00B4CE04 /* SignInController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A11F94BB74003EF318 /* SignInController.storyboard */; };
 		4446DAFF1F97B92800B4CE04 /* TrendingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446DAF81F97B89600B4CE04 /* TrendingListCell.swift */; };
+		4446DB021F97C30800B4CE04 /* SearchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446DB011F97C30800B4CE04 /* SearchListVC.swift */; };
+		4446DB031F97C4C200B4CE04 /* SearchListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4446DB001F97C30000B4CE04 /* SearchListVC.storyboard */; };
 		44CB58211F964B9F00361EE4 /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB58201F964B9F00361EE4 /* Repositories.storyboard */; };
 		44CB58241F964DDF00361EE4 /* RepositoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB58231F964DDF00361EE4 /* RepositoriesController.swift */; };
 		44CB58251F96737C00361EE4 /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CB58151F95037A00361EE4 /* GothamProRegular.ttf */; };
@@ -58,6 +60,8 @@
 		4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListVC.swift; sourceTree = "<group>"; };
 		4446DAF71F97B89600B4CE04 /* TrendingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingListCell.xib; sourceTree = "<group>"; };
 		4446DAF81F97B89600B4CE04 /* TrendingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListCell.swift; sourceTree = "<group>"; };
+		4446DB001F97C30000B4CE04 /* SearchListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchListVC.storyboard; sourceTree = "<group>"; };
+		4446DB011F97C30800B4CE04 /* SearchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListVC.swift; sourceTree = "<group>"; };
 		44CB58151F95037A00361EE4 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		44CB58161F95037A00361EE4 /* GothamProBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlackItalic.ttf; sourceTree = "<group>"; };
 		44CB58171F95037A00361EE4 /* GothamProLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProLightItalic.ttf; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				4446DAF21F97B84300B4CE04 /* TrendingList.storyboard */,
 				442FF6A11F94BB74003EF318 /* SignInController.storyboard */,
 				44CB58201F964B9F00361EE4 /* Repositories.storyboard */,
+				4446DB001F97C30000B4CE04 /* SearchListVC.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		44CB58221F964BB300361EE4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4446DB011F97C30800B4CE04 /* SearchListVC.swift */,
 				4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */,
 				442FF69F1F94BB74003EF318 /* SignInController.swift */,
 				44CB58231F964DDF00361EE4 /* RepositoriesController.swift */,
@@ -262,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4446DB031F97C4C200B4CE04 /* SearchListVC.storyboard in Resources */,
 				4446DAFE1F97B8FE00B4CE04 /* SignInController.storyboard in Resources */,
 				4446DAFD1F97B8F300B4CE04 /* LaunchScreen.storyboard in Resources */,
 				4446DAFC1F97B8E200B4CE04 /* TrendingList.storyboard in Resources */,
@@ -299,6 +306,7 @@
 				4446DAF41F97B85300B4CE04 /* TrendingListVC.swift in Sources */,
 				443A54401F967636004ECF84 /* FontsList.swift in Sources */,
 				442FF6A01F94BB74003EF318 /* SignInController.swift in Sources */,
+				4446DB021F97C30800B4CE04 /* SearchListVC.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
 				44CB58241F964DDF00361EE4 /* RepositoriesController.swift in Sources */,
 			);
