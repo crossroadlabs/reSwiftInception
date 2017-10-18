@@ -13,6 +13,8 @@
 		442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A41F94BB74003EF318 /* Assets.xcassets */; };
 		442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */; };
 		442FF6B31F94BB74003EF318 /* reSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF6B21F94BB74003EF318 /* reSwiftTests.swift */; };
+		5BD1A2BF1F977B8D002DBDF3 /* SearchListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD1A2BE1F977B8D002DBDF3 /* SearchListVC.storyboard */; };
+		5BD1A2C11F977BA8002DBDF3 /* SearchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1A2C01F977BA8002DBDF3 /* SearchListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		442FF6AE1F94BB74003EF318 /* reSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		442FF6B21F94BB74003EF318 /* reSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reSwiftTests.swift; sourceTree = "<group>"; };
 		442FF6B41F94BB74003EF318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD1A2BE1F977B8D002DBDF3 /* SearchListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchListVC.storyboard; sourceTree = "<group>"; };
+		5BD1A2C01F977BA8002DBDF3 /* SearchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			children = (
 				442FF69D1F94BB74003EF318 /* AppDelegate.swift */,
 				442FF69F1F94BB74003EF318 /* ViewController.swift */,
+				5BD1A2C01F977BA8002DBDF3 /* SearchListVC.swift */,
 				442FF6A11F94BB74003EF318 /* Main.storyboard */,
+				5BD1A2BE1F977B8D002DBDF3 /* SearchListVC.storyboard */,
 				442FF6A41F94BB74003EF318 /* Assets.xcassets */,
 				442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */,
 				442FF6A91F94BB74003EF318 /* Info.plist */,
@@ -180,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */,
+				5BD1A2BF1F977B8D002DBDF3 /* SearchListVC.storyboard in Resources */,
 				442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */,
 				442FF6A31F94BB74003EF318 /* Main.storyboard in Resources */,
 			);
@@ -199,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD1A2C11F977BA8002DBDF3 /* SearchListVC.swift in Sources */,
 				442FF6A01F94BB74003EF318 /* ViewController.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
 			);
@@ -354,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y92JL37YF3;
+				DEVELOPMENT_TEAM = PAHD429XH6;
 				INFOPLIST_FILE = reSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.reSwift;
@@ -369,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y92JL37YF3;
+				DEVELOPMENT_TEAM = PAHD429XH6;
 				INFOPLIST_FILE = reSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.reSwift;
