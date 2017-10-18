@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF69D1F94BB74003EF318 /* AppDelegate.swift */; };
 		442FF6A01F94BB74003EF318 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF69F1F94BB74003EF318 /* SignInController.swift */; };
-		442FF6A31F94BB74003EF318 /* SignInController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A11F94BB74003EF318 /* SignInController.storyboard */; };
 		442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A41F94BB74003EF318 /* Assets.xcassets */; };
-		442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */; };
 		442FF6B31F94BB74003EF318 /* reSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF6B21F94BB74003EF318 /* reSwiftTests.swift */; };
 		443A54401F967636004ECF84 /* FontsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443A543F1F967636004ECF84 /* FontsList.swift */; };
+		4446DAF41F97B85300B4CE04 /* TrendingListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */; };
+		4446DAFA1F97B8D600B4CE04 /* TrendingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446DAF71F97B89600B4CE04 /* TrendingListCell.xib */; };
+		4446DAFC1F97B8E200B4CE04 /* TrendingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4446DAF21F97B84300B4CE04 /* TrendingList.storyboard */; };
+		4446DAFD1F97B8F300B4CE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */; };
+		4446DAFE1F97B8FE00B4CE04 /* SignInController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A11F94BB74003EF318 /* SignInController.storyboard */; };
+		4446DAFF1F97B92800B4CE04 /* TrendingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446DAF81F97B89600B4CE04 /* TrendingListCell.swift */; };
 		44CB58211F964B9F00361EE4 /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB58201F964B9F00361EE4 /* Repositories.storyboard */; };
 		44CB58241F964DDF00361EE4 /* RepositoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB58231F964DDF00361EE4 /* RepositoriesController.swift */; };
 		44CB58251F96737C00361EE4 /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CB58151F95037A00361EE4 /* GothamProRegular.ttf */; };
@@ -50,6 +54,10 @@
 		442FF6B21F94BB74003EF318 /* reSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reSwiftTests.swift; sourceTree = "<group>"; };
 		442FF6B41F94BB74003EF318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443A543F1F967636004ECF84 /* FontsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsList.swift; sourceTree = "<group>"; };
+		4446DAF21F97B84300B4CE04 /* TrendingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrendingList.storyboard; sourceTree = "<group>"; };
+		4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListVC.swift; sourceTree = "<group>"; };
+		4446DAF71F97B89600B4CE04 /* TrendingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingListCell.xib; sourceTree = "<group>"; };
+		4446DAF81F97B89600B4CE04 /* TrendingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListCell.swift; sourceTree = "<group>"; };
 		44CB58151F95037A00361EE4 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		44CB58161F95037A00361EE4 /* GothamProBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlackItalic.ttf; sourceTree = "<group>"; };
 		44CB58171F95037A00361EE4 /* GothamProLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProLightItalic.ttf; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 			children = (
 				44CB58141F95037A00361EE4 /* GothamPro */,
 				442FF69D1F94BB74003EF318 /* AppDelegate.swift */,
+				4446DAF61F97B88600B4CE04 /* Views */,
 				44CB58221F964BB300361EE4 /* Controllers */,
 				44CB581F1F964B4B00361EE4 /* Storyboards */,
 				442FF6A41F94BB74003EF318 /* Assets.xcassets */,
@@ -122,6 +131,15 @@
 				442FF6B41F94BB74003EF318 /* Info.plist */,
 			);
 			path = reSwiftTests;
+			sourceTree = "<group>";
+		};
+		4446DAF61F97B88600B4CE04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4446DAF81F97B89600B4CE04 /* TrendingListCell.swift */,
+				4446DAF71F97B89600B4CE04 /* TrendingListCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		44CB58141F95037A00361EE4 /* GothamPro */ = {
@@ -144,6 +162,7 @@
 		44CB581F1F964B4B00361EE4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4446DAF21F97B84300B4CE04 /* TrendingList.storyboard */,
 				442FF6A11F94BB74003EF318 /* SignInController.storyboard */,
 				44CB58201F964B9F00361EE4 /* Repositories.storyboard */,
 			);
@@ -153,6 +172,7 @@
 		44CB58221F964BB300361EE4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */,
 				442FF69F1F94BB74003EF318 /* SignInController.swift */,
 				44CB58231F964DDF00361EE4 /* RepositoriesController.swift */,
 			);
@@ -242,6 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4446DAFE1F97B8FE00B4CE04 /* SignInController.storyboard in Resources */,
+				4446DAFD1F97B8F300B4CE04 /* LaunchScreen.storyboard in Resources */,
+				4446DAFC1F97B8E200B4CE04 /* TrendingList.storyboard in Resources */,
+				4446DAFA1F97B8D600B4CE04 /* TrendingListCell.xib in Resources */,
 				44CB58251F96737C00361EE4 /* GothamProRegular.ttf in Resources */,
 				44CB58261F96737C00361EE4 /* GothamProBlackItalic.ttf in Resources */,
 				44CB58271F96737C00361EE4 /* GothamProLightItalic.ttf in Resources */,
@@ -252,10 +276,8 @@
 				44CB582C1F96737C00361EE4 /* GothamProMedium.ttf in Resources */,
 				44CB582D1F96737C00361EE4 /* GothamProBold.ttf in Resources */,
 				44CB582E1F96737C00361EE4 /* GothamProBoldItalic.ttf in Resources */,
-				442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */,
 				442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */,
 				44CB58211F964B9F00361EE4 /* Repositories.storyboard in Resources */,
-				442FF6A31F94BB74003EF318 /* SignInController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4446DAFF1F97B92800B4CE04 /* TrendingListCell.swift in Sources */,
+				4446DAF41F97B85300B4CE04 /* TrendingListVC.swift in Sources */,
 				443A54401F967636004ECF84 /* FontsList.swift in Sources */,
 				442FF6A01F94BB74003EF318 /* SignInController.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
