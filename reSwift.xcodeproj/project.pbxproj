@@ -13,6 +13,8 @@
 		442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A41F94BB74003EF318 /* Assets.xcassets */; };
 		442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */; };
 		442FF6B31F94BB74003EF318 /* reSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF6B21F94BB74003EF318 /* reSwiftTests.swift */; };
+		5B9F173B1F960E8400089D7A /* TrendingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F17391F960E8400089D7A /* TrendingListCell.swift */; };
+		5B9F173C1F960E8400089D7A /* TrendingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F173A1F960E8400089D7A /* TrendingListCell.xib */; };
 		5BE3BCD11F94EE8B005EE49C /* TrendingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE3BCD01F94EE8A005EE49C /* TrendingList.storyboard */; };
 		5BE3BCD31F94F677005EE49C /* TrendingListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3BCD21F94F677005EE49C /* TrendingListVC.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,10 @@
 		442FF6AE1F94BB74003EF318 /* reSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		442FF6B21F94BB74003EF318 /* reSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reSwiftTests.swift; sourceTree = "<group>"; };
 		442FF6B41F94BB74003EF318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9F17391F960E8400089D7A /* TrendingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListCell.swift; sourceTree = "<group>"; };
+		5B9F173A1F960E8400089D7A /* TrendingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingListCell.xib; sourceTree = "<group>"; };
+		5BD1A2BC1F963A8D002DBDF3 /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
+		5BD1A2BD1F963B26002DBDF3 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		5BE3BCD01F94EE8A005EE49C /* TrendingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrendingList.storyboard; sourceTree = "<group>"; };
 		5BE3BCD21F94F677005EE49C /* TrendingListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +90,13 @@
 				442FF69D1F94BB74003EF318 /* AppDelegate.swift */,
 				442FF69F1F94BB74003EF318 /* ViewController.swift */,
 				5BE3BCD21F94F677005EE49C /* TrendingListVC.swift */,
+				5B9F17391F960E8400089D7A /* TrendingListCell.swift */,
+				5B9F173A1F960E8400089D7A /* TrendingListCell.xib */,
 				442FF6A11F94BB74003EF318 /* Main.storyboard */,
 				5BE3BCD01F94EE8A005EE49C /* TrendingList.storyboard */,
 				442FF6A41F94BB74003EF318 /* Assets.xcassets */,
+				5BD1A2BD1F963B26002DBDF3 /* GothamProRegular.ttf */,
+				5BD1A2BC1F963A8D002DBDF3 /* GothamProMedium.ttf */,
 				442FF6A61F94BB74003EF318 /* LaunchScreen.storyboard */,
 				442FF6A91F94BB74003EF318 /* Info.plist */,
 			);
@@ -187,6 +197,7 @@
 			files = (
 				442FF6A81F94BB74003EF318 /* LaunchScreen.storyboard in Resources */,
 				5BE3BCD11F94EE8B005EE49C /* TrendingList.storyboard in Resources */,
+				5B9F173C1F960E8400089D7A /* TrendingListCell.xib in Resources */,
 				442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */,
 				442FF6A31F94BB74003EF318 /* Main.storyboard in Resources */,
 			);
@@ -206,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9F173B1F960E8400089D7A /* TrendingListCell.swift in Sources */,
 				442FF6A01F94BB74003EF318 /* ViewController.swift in Sources */,
 				5BE3BCD31F94F677005EE49C /* TrendingListVC.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
