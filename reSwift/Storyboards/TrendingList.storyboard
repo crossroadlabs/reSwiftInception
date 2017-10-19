@@ -145,6 +145,7 @@
                     <connections>
                         <segue destination="ZVc-aN-VwR" kind="relationship" relationship="viewControllers" id="BB4-Xh-VHq"/>
                         <segue destination="jZ5-eU-w5v" kind="relationship" relationship="viewControllers" id="Nad-fr-bMK"/>
+                        <segue destination="iqF-uy-3nz" kind="relationship" relationship="viewControllers" id="M09-EE-oDc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxM-N2-rEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -202,10 +203,40 @@
             </objects>
             <point key="canvasLocation" x="162" y="905"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="IPe-Im-g73">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Yht-OC-9i3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Din-lz-uz0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4N-kA-QnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409.5999999999999" y="1500.4497751124438"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="EgE-rh-Aff">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iqF-uy-3nz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="4fk-5e-tJh"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mbi-bH-A0z">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yht-OC-9i3" kind="relationship" relationship="rootViewController" id="hSv-8E-TiB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmy-51-uVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="1630"/>
+        </scene>
     </scenes>
     <resources>
         <image name="activeIcon" width="26" height="13"/>
         <image name="disclosure" width="9" height="5"/>
         <image name="group" width="24" height="24"/>
+        <image name="profile" width="20" height="26"/>
     </resources>
 </document>

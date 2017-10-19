@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4402CAB11F98C5A700BC1629 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4402CAB01F98C5A700BC1629 /* Profile.storyboard */; };
+		4402CAB31F98D1A700BC1629 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402CAB21F98D1A700BC1629 /* ProfileVC.swift */; };
 		442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF69D1F94BB74003EF318 /* AppDelegate.swift */; };
 		442FF6A01F94BB74003EF318 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FF69F1F94BB74003EF318 /* SignInController.swift */; };
 		442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442FF6A41F94BB74003EF318 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4402CAB01F98C5A700BC1629 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4402CAB21F98D1A700BC1629 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		442FF69A1F94BB74003EF318 /* reSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442FF69D1F94BB74003EF318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442FF69F1F94BB74003EF318 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				442FF6A11F94BB74003EF318 /* SignInController.storyboard */,
 				44CB58201F964B9F00361EE4 /* Repositories.storyboard */,
 				4446DB001F97C30000B4CE04 /* SearchListVC.storyboard */,
+				4402CAB01F98C5A700BC1629 /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				4446DAF31F97B85300B4CE04 /* TrendingListVC.swift */,
 				442FF69F1F94BB74003EF318 /* SignInController.swift */,
 				44CB58231F964DDF00361EE4 /* RepositoriesController.swift */,
+				4402CAB21F98D1A700BC1629 /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				4446DAFC1F97B8E200B4CE04 /* TrendingList.storyboard in Resources */,
 				4446DAFA1F97B8D600B4CE04 /* TrendingListCell.xib in Resources */,
 				44CB58251F96737C00361EE4 /* GothamProRegular.ttf in Resources */,
+				4402CAB11F98C5A700BC1629 /* Profile.storyboard in Resources */,
 				44CB58261F96737C00361EE4 /* GothamProBlackItalic.ttf in Resources */,
 				44CB58271F96737C00361EE4 /* GothamProLightItalic.ttf in Resources */,
 				44CB58281F96737C00361EE4 /* GothamProItalic.ttf in Resources */,
@@ -443,6 +450,7 @@
 				4446DAF41F97B85300B4CE04 /* TrendingListVC.swift in Sources */,
 				443A54401F967636004ECF84 /* FontsList.swift in Sources */,
 				442FF6A01F94BB74003EF318 /* SignInController.swift in Sources */,
+				4402CAB31F98D1A700BC1629 /* ProfileVC.swift in Sources */,
 				4446DB021F97C30800B4CE04 /* SearchListVC.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
 				44CB58241F964DDF00361EE4 /* RepositoriesController.swift in Sources */,
