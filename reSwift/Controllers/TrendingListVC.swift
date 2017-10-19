@@ -18,7 +18,7 @@ class TrendingListVC: UIViewController {
         super.viewDidLoad()
         trendingTV.delegate = self
         trendingTV.dataSource = self
-        trendingTV.register(UINib(nibName: "TrendingListCell", bundle: nil), forCellReuseIdentifier: "TrendingListCell")
+        trendingTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
         segmentFilter.sendActions(for: .valueChanged)
     }
     
@@ -57,7 +57,7 @@ extension TrendingListVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingListCell") as? TrendingListCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
         return cell
         }
         return UITableViewCell()

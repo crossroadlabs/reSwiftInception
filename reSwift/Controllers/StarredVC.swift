@@ -1,5 +1,5 @@
 //
-//  SearchListVC.swift
+//  StarredVC.swift
 //  reSwift
 //
 //  Created by Roman Stolyarchuk on 10/18/17.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class SearchListVC: UIViewController {
+class StarredVC: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTV: UITableView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //118,36,32
@@ -23,28 +22,15 @@ class SearchListVC: UIViewController {
         
         searchListTV.delegate = self
         searchListTV.dataSource = self
-        searchListTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
-        
-        segmentControl.sendActions(for: .valueChanged)
+        searchListTV.register(UINib(nibName: "StaredCell", bundle: nil), forCellReuseIdentifier: "StaredCell")
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-    @IBAction func segmentedControlAction(sender: UISegmentedControl) {
-        if(sender.selectedSegmentIndex == 0)
-        {
-            print("Repositories")
-        }
-        else if(sender.selectedSegmentIndex == 1)
-        {
-            print("Users")
-        }
-    }
 }
 
-extension SearchListVC: UITableViewDelegate,UITableViewDataSource {
+extension StarredVC: UITableViewDelegate,UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -55,7 +41,7 @@ extension SearchListVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "StaredCell") as? StaredCell {
             return cell
         }
         return UITableViewCell()
