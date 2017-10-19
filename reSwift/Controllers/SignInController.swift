@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInController.swift
 //  reSwift
 //
 //  Created by Ruslan Yupyn on 10/16/17.
@@ -8,11 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInController: UIViewController {
 
+    @IBOutlet weak var credentialsContainer: UIView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        credentialsContainer.layer.borderColor = UIColor(white: 233.0 / 255.0, alpha: 1.0).cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {

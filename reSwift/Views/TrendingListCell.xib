@@ -91,7 +91,7 @@
                                 <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="5UE-dy-SON">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="5UE-dy-SON">
                                 <rect key="frame" x="130" y="7.5" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="8rV-SV-Ifx"/>
@@ -163,7 +163,7 @@
     <resources>
         <image name="Rick" width="848" height="1080"/>
         <image name="like1" width="11" height="11"/>
-        <image name="shape" width="10" height="12"/>
         <image name="star1" width="12" height="12"/>
+        <image name="user1" width="19" height="25"/>
     </resources>
 </document>
