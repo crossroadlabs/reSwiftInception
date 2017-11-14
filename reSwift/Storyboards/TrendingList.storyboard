@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H20-p8-0ua">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H20-p8-0ua">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,9 +44,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpy-Hq-BdM">
                                                 <rect key="frame" x="70" y="-4.5" width="235" height="33"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
-                                                <connections>
-                                                    <segue destination="sUw-M7-yTE" kind="show" id="irF-aE-gDU"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,14 +125,6 @@
             </objects>
             <point key="canvasLocation" x="1439" y="100"/>
         </scene>
-        <!--Repositories-->
-        <scene sceneID="SLE-Kn-fR6">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Repositories" id="sUw-M7-yTE" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOF-zk-VjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2226" y="37"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PnG-p1-Hty">
             <objects>
@@ -145,6 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ZVc-aN-VwR" kind="relationship" relationship="viewControllers" id="BB4-Xh-VHq"/>
@@ -157,11 +147,11 @@
             </objects>
             <point key="canvasLocation" x="-319" y="101"/>
         </scene>
-        <!--Trands-->
+        <!--Trends-->
         <scene sceneID="WvY-bH-8hR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZVc-aN-VwR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trands" image="activeIcon" selectedImage="activeIcon" id="yTq-TB-6Bq">
+                    <tabBarItem key="tabBarItem" title="Trends" image="activeIcon" selectedImage="activeIcon" id="yTq-TB-6Bq">
                         <color key="badgeColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
                     </tabBarItem>
@@ -187,13 +177,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94Z-YO-39Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="1396"/>
+            <point key="canvasLocation" x="1229" y="1556"/>
         </scene>
         <!--Search-->
         <scene sceneID="7lO-tv-IjD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jZ5-eU-w5v" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="group" id="Rx8-Rt-vXt"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="group" selectedImage="group" id="Rx8-Rt-vXt">
+                        <color key="badgeColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4sx-QI-SE5">
@@ -206,7 +198,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogg-dt-F1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="1397"/>
+            <point key="canvasLocation" x="535" y="1557"/>
         </scene>
         <!--Profile-->
         <scene sceneID="IPe-Im-g73">
@@ -216,13 +208,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4N-kA-QnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="1814"/>
+            <point key="canvasLocation" x="1195" y="2286"/>
         </scene>
         <!--Profile-->
         <scene sceneID="EgE-rh-Aff">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iqF-uy-3nz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="4fk-5e-tJh"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile" id="4fk-5e-tJh">
+                        <color key="badgeColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mbi-bH-A0z">
@@ -235,7 +229,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wmy-51-uVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-319" y="1872"/>
+            <point key="canvasLocation" x="534" y="2287"/>
         </scene>
         <!--StarredVC-->
         <scene sceneID="cnz-KS-JAl">
@@ -245,13 +239,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZM-2X-hC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="764.6176911544228"/>
+            <point key="canvasLocation" x="1230" y="823"/>
         </scene>
         <!--Stared-->
         <scene sceneID="1gj-qI-prb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZGk-Os-FKY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stared" image="favorites" id="Frw-az-VAf"/>
+                    <tabBarItem key="tabBarItem" title="Stared" image="favorites" selectedImage="favorites" id="Frw-az-VAf">
+                        <color key="badgeColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FKu-B3-f7J">
@@ -264,7 +260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKA-23-4l7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="870"/>
+            <point key="canvasLocation" x="535" y="824"/>
         </scene>
     </scenes>
     <resources>

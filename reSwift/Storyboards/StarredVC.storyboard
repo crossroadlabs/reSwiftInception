@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heI-8s-Phc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heI-8s-Phc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
         <!--StarredVC-->
         <scene sceneID="oT5-R5-Pfa">
             <objects>
-                <viewController id="heI-8s-Phc" customClass="StarredVC" customModule="reSwift" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StarredVC" id="heI-8s-Phc" customClass="StarredVC" customModule="reSwift" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kR4-BK-maT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stared" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-0d-LgH">
-                                                <rect key="frame" x="158.5" y="25" width="59" height="16.5"/>
+                                                <rect key="frame" x="158.5" y="25" width="59" height="32"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -38,7 +38,8 @@
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="C9z-xt-BHe"/>
-                                            <constraint firstItem="vEL-0d-LgH" firstAttribute="centerY" secondItem="Xoe-PX-6Ko" secondAttribute="centerY" id="DZQ-mM-6A6"/>
+                                            <constraint firstItem="vEL-0d-LgH" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="Jho-pq-ReR"/>
+                                            <constraint firstAttribute="bottom" secondItem="vEL-0d-LgH" secondAttribute="bottom" constant="8" id="aHc-lx-TaH"/>
                                             <constraint firstItem="vEL-0d-LgH" firstAttribute="centerX" secondItem="Xoe-PX-6Ko" secondAttribute="centerX" id="bIS-Ym-992"/>
                                         </constraints>
                                     </view>
@@ -60,6 +61,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9iP-4g-Eex"/>
                                             <constraint firstItem="1PE-eC-M8O" firstAttribute="top" secondItem="hN9-ek-Z9L" secondAttribute="top" id="C2G-Wa-pHZ"/>
                                             <constraint firstItem="1PE-eC-M8O" firstAttribute="top" secondItem="hN9-ek-Z9L" secondAttribute="top" id="Rb3-IY-cak"/>
                                             <constraint firstAttribute="trailing" secondItem="1PE-eC-M8O" secondAttribute="trailing" id="d38-fJ-YUS"/>
@@ -106,7 +108,9 @@
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="1PE-eC-M8O" id="cA8-D5-a4K"/>
+                        <outlet property="searchBarViewHeight" destination="9iP-4g-Eex" id="DyW-j8-wL3"/>
                         <outlet property="searchListTV" destination="qYF-cE-4Nv" id="3m3-s5-5rH"/>
+                        <outlet property="titleLbl" destination="vEL-0d-LgH" id="Pc6-gr-YAY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNw-b6-nZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
