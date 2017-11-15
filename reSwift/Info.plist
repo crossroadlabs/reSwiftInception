@@ -20,10 +20,23 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GothamProLightItalic.ttf</string>
+		<string>GothamProBlackItalic.ttf</string>
+		<string>GothamProRegular.ttf</string>
+		<string>GothamProItalic.ttf</string>
+		<string>GothamProMediumItalic.ttf</string>
+		<string>GothamProBlack.ttf</string>
+		<string>GothamProLight.ttf</string>
+		<string>GothamProMedium.ttf</string>
+		<string>GothamProBold.ttf</string>
+		<string>GothamProBoldItalic.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>SignInController</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -31,8 +44,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
