@@ -47,7 +47,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-d8-b1z">
-                                        <rect key="frame" x="154.5" y="189.5" width="66.5" height="22.5"/>
+                                        <rect key="frame" x="155" y="189.5" width="66.5" height="22.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22.5" id="LmE-F9-4Rv"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N60-7A-c6V">
-                                        <rect key="frame" x="152.5" y="222" width="71.5" height="16"/>
+                                        <rect key="frame" x="152" y="222" width="71.5" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="TN8-Aa-hlr"/>
                                         </constraints>
@@ -456,13 +456,23 @@
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-bt-OAx">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                                <connections>
+                                                    <action selector="ownersAction:" destination="iqq-W5-HzX" eventType="touchUpInside" id="XgC-ng-th0"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eZ8-bt-OAx" secondAttribute="trailing" id="1em-iP-gf0"/>
                                             <constraint firstItem="bFl-hF-I5P" firstAttribute="centerY" secondItem="89Z-ar-Cul" secondAttribute="centerY" id="2OH-tD-wCl"/>
+                                            <constraint firstAttribute="bottom" secondItem="eZ8-bt-OAx" secondAttribute="bottom" id="AfU-wD-Rn0"/>
                                             <constraint firstItem="bFl-hF-I5P" firstAttribute="leading" secondItem="89Z-ar-Cul" secondAttribute="leading" constant="19" id="J1e-c3-mAP"/>
                                             <constraint firstItem="Sc2-kt-hn2" firstAttribute="centerY" secondItem="89Z-ar-Cul" secondAttribute="centerY" id="PaR-pJ-fwb"/>
+                                            <constraint firstItem="eZ8-bt-OAx" firstAttribute="leading" secondItem="89Z-ar-Cul" secondAttribute="leading" id="Zuj-3j-KxC"/>
                                             <constraint firstItem="Sc2-kt-hn2" firstAttribute="leading" secondItem="89Z-ar-Cul" secondAttribute="leading" constant="58" id="bbr-6K-vuB"/>
+                                            <constraint firstItem="eZ8-bt-OAx" firstAttribute="top" secondItem="89Z-ar-Cul" secondAttribute="top" id="glg-OH-JKM"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -499,10 +509,20 @@
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTB-yR-u03">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
+                                                <connections>
+                                                    <action selector="eventsAction:" destination="iqq-W5-HzX" eventType="touchUpInside" id="ju4-29-mdH"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="qTB-yR-u03" firstAttribute="leading" secondItem="lrc-Ue-mxX" secondAttribute="leading" id="40X-fb-Qw8"/>
+                                            <constraint firstAttribute="trailing" secondItem="qTB-yR-u03" secondAttribute="trailing" id="HHH-CL-60e"/>
+                                            <constraint firstItem="qTB-yR-u03" firstAttribute="top" secondItem="lrc-Ue-mxX" secondAttribute="top" id="QVh-ag-CGA"/>
                                             <constraint firstItem="1jw-7H-0sU" firstAttribute="centerY" secondItem="lrc-Ue-mxX" secondAttribute="centerY" id="RTO-zY-hpq"/>
+                                            <constraint firstAttribute="bottom" secondItem="qTB-yR-u03" secondAttribute="bottom" id="SgN-ah-leu"/>
                                             <constraint firstItem="5QT-PP-SN2" firstAttribute="leading" secondItem="lrc-Ue-mxX" secondAttribute="leading" constant="58" id="Wpy-qE-Ntm"/>
                                             <constraint firstItem="5QT-PP-SN2" firstAttribute="centerY" secondItem="lrc-Ue-mxX" secondAttribute="centerY" id="lXN-OG-by3"/>
                                             <constraint firstItem="1jw-7H-0sU" firstAttribute="leading" secondItem="lrc-Ue-mxX" secondAttribute="leading" constant="19" id="tht-bT-FZC"/>
@@ -612,12 +632,14 @@
                         <outlet property="branchesCountLabel" destination="gT1-9J-RGf" id="YLN-GT-ToG"/>
                         <outlet property="dateLabel" destination="Aoe-z9-Jkp" id="6MO-1M-6qE"/>
                         <outlet property="descriptionLabel" destination="N60-7A-c6V" id="VX1-EJ-AIA"/>
+                        <outlet property="eventsBtn" destination="qTB-yR-u03" id="WVZ-pv-1ZS"/>
                         <outlet property="eventsLabel" destination="5QT-PP-SN2" id="Tsz-Dx-hkC"/>
                         <outlet property="forksCount" destination="oCq-V3-cti" id="vpC-cq-FGr"/>
                         <outlet property="issuesCountLabel" destination="h1y-sZ-8fJ" id="RDM-p9-Pfk"/>
                         <outlet property="issuesLabel" destination="Ijt-h2-9cT" id="k0y-pL-jQJ"/>
                         <outlet property="nameLabel" destination="Ssz-d8-b1z" id="GOb-a9-vDq"/>
                         <outlet property="ovnersLabel" destination="Sc2-kt-hn2" id="eB7-js-AJu"/>
+                        <outlet property="ownersBtn" destination="eZ8-bt-OAx" id="zwu-dy-DaZ"/>
                         <outlet property="profileImage" destination="jlS-E0-Yyq" id="J9z-a8-DgS"/>
                         <outlet property="publicLabel" destination="Gq3-px-ziK" id="qTO-TX-OsV"/>
                         <outlet property="sizeLabel" destination="Cwb-DU-9Ba" id="pag-kE-7G6"/>
