@@ -29,18 +29,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stared" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-0d-LgH">
-                                                <rect key="frame" x="158.5" y="25" width="59" height="32"/>
+                                                <rect key="frame" x="161.5" y="25" width="53.5" height="32"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYy-cL-o4t">
+                                                <rect key="frame" x="8" y="25" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="4kq-K8-nsd"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Jwd-p2-VPz"/>
+                                                </constraints>
+                                                <state key="normal" image="back_arrow"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="yYy-cL-o4t" firstAttribute="leading" secondItem="Xoe-PX-6Ko" secondAttribute="leading" constant="8" id="1HA-3S-Uga"/>
                                             <constraint firstAttribute="height" constant="65" id="C9z-xt-BHe"/>
                                             <constraint firstItem="vEL-0d-LgH" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="Jho-pq-ReR"/>
                                             <constraint firstAttribute="bottom" secondItem="vEL-0d-LgH" secondAttribute="bottom" constant="8" id="aHc-lx-TaH"/>
                                             <constraint firstItem="vEL-0d-LgH" firstAttribute="centerX" secondItem="Xoe-PX-6Ko" secondAttribute="centerX" id="bIS-Ym-992"/>
+                                            <constraint firstItem="yYy-cL-o4t" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="mUF-Ug-GqP"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-ek-Z9L">
@@ -107,6 +117,7 @@
                         <viewLayoutGuide key="safeArea" id="wsJ-1w-hDy"/>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="yYy-cL-o4t" id="63N-Vu-g7S"/>
                         <outlet property="searchBar" destination="1PE-eC-M8O" id="cA8-D5-a4K"/>
                         <outlet property="searchBarViewHeight" destination="9iP-4g-Eex" id="DyW-j8-wL3"/>
                         <outlet property="searchListTV" destination="qYF-cE-4Nv" id="3m3-s5-5rH"/>
@@ -118,4 +129,7 @@
             <point key="canvasLocation" x="355.5" y="-142.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_arrow" width="50" height="50"/>
+    </resources>
 </document>

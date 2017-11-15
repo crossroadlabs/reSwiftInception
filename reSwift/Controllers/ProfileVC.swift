@@ -17,6 +17,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var followingCount: UILabel!
     @IBOutlet weak var repoBtn: UIButton!
     @IBOutlet weak var eventsBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     
     @IBOutlet var profileTopBorderedViews: [UIView]!
     @IBOutlet var profileBottomBorderedViews: [UIView]!
@@ -33,10 +34,19 @@ class ProfileVC: UIViewController {
         
         repoBtn.addTarget(self, action: #selector(repoAction), for: .touchUpInside)
         eventsBtn.addTarget(self, action: #selector(eventsAction), for: .touchUpInside)
+        backBtn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        backBtn.isHidden = (self.navigationController?.viewControllers.count ?? 0) > 1 ? false : true
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    @objc func backAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func repoAction(_ sender: UIButton) {
