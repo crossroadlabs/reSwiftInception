@@ -24,6 +24,7 @@ class SearchListVC: UIViewController {
         searchListTV.delegate = self
         searchListTV.dataSource = self
         searchListTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
+        searchListTV.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
         
         segmentControl.sendActions(for: .valueChanged)
     }
@@ -41,6 +42,7 @@ class SearchListVC: UIViewController {
         {
             print("Users")
         }
+        searchListTV.reloadData()
     }
 }
 
@@ -55,13 +57,28 @@ extension SearchListVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
-            return cell
+        if segmentControl.selectedSegmentIndex == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
+                return cell
+            }
+        } else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserCell {
+                return cell
+            }
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if segmentControl.selectedSegmentIndex == 0 {
+            if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
+                self.navigationController?.pushViewController(repoVC, animated: true)
+            }
+        } else {
+            if let profileVC = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+                self.navigationController?.pushViewController(profileVC, animated: true)
+            }
+        }
         
     }
 }

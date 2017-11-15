@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqq-W5-HzX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqq-W5-HzX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,7 +22,7 @@
         <!--Repositories Controller-->
         <scene sceneID="nSG-BO-mTp">
             <objects>
-                <viewController id="iqq-W5-HzX" customClass="RepositoriesController" customModule="reSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RepositoriesController" id="iqq-W5-HzX" customClass="RepositoriesController" customModule="reSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ma-D7-r1c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,6 +166,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-s2-32o">
+                                        <rect key="frame" x="4" y="25" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="4yS-Dz-ItY"/>
+                                            <constraint firstAttribute="height" constant="25" id="Gpc-Nk-o7N"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back_arrow"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="iqq-W5-HzX" eventType="touchUpInside" id="loB-tO-oc4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -178,6 +189,8 @@
                                     <constraint firstItem="N60-7A-c6V" firstAttribute="top" secondItem="Ssz-d8-b1z" secondAttribute="bottom" constant="10" id="iwq-4W-LGJ"/>
                                     <constraint firstItem="KV3-Wo-9Lf" firstAttribute="height" secondItem="lKg-QU-L40" secondAttribute="height" multiplier="63:318" id="nBU-8Y-eJi"/>
                                     <constraint firstItem="Ssz-d8-b1z" firstAttribute="top" secondItem="jlS-E0-Yyq" secondAttribute="bottom" constant="19" id="npu-SP-rQX"/>
+                                    <constraint firstItem="7yD-s2-32o" firstAttribute="top" secondItem="lKg-QU-L40" secondAttribute="top" constant="25" id="ot5-hh-170"/>
+                                    <constraint firstItem="7yD-s2-32o" firstAttribute="leading" secondItem="lKg-QU-L40" secondAttribute="leading" constant="4" id="rS2-2y-irk"/>
                                     <constraint firstAttribute="trailing" secondItem="KV3-Wo-9Lf" secondAttribute="trailing" id="xoy-53-AJH"/>
                                 </constraints>
                             </view>
@@ -629,6 +642,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_arrow" width="50" height="50"/>
         <image name="calendar" width="19" height="20"/>
         <image name="events" width="24" height="25"/>
         <image name="hierarchy" width="20" height="24"/>

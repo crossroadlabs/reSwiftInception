@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heI-8s-Phc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heI-8s-Phc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-Jp-8wf">
-                                                <rect key="frame" x="97" y="18.5" width="181" height="29"/>
+                                                <rect key="frame" x="97" y="25" width="181" height="31"/>
                                                 <segments>
                                                     <segment title="Repositories"/>
                                                     <segment title="Users"/>
@@ -37,9 +37,10 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="Cpf-Jp-8wf" firstAttribute="centerY" secondItem="Xoe-PX-6Ko" secondAttribute="centerY" id="6pJ-m7-Rsl"/>
                                             <constraint firstAttribute="height" constant="65" id="C9z-xt-BHe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cpf-Jp-8wf" secondAttribute="bottom" constant="10" id="Onj-0c-q9h"/>
                                             <constraint firstItem="Cpf-Jp-8wf" firstAttribute="centerX" secondItem="Xoe-PX-6Ko" secondAttribute="centerX" id="SsR-qd-6vo"/>
+                                            <constraint firstItem="Cpf-Jp-8wf" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="eIL-rP-eBv"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-ek-Z9L">
