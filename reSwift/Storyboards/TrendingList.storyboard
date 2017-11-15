@@ -29,20 +29,20 @@
                                         <rect key="frame" x="0.0" y="25" width="375" height="25"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Languages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9I-WX-6zO">
-                                                <rect key="frame" x="131" y="2.5" width="113.5" height="21"/>
+                                                <rect key="frame" x="124.5" y="5" width="127" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="USX-zc-sqK">
-                                                <rect key="frame" x="246" y="11" width="11" height="6"/>
+                                                <rect key="frame" x="253" y="12" width="11" height="6"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="11" id="8CD-OA-w5r"/>
                                                     <constraint firstAttribute="height" constant="6" id="Yih-tJ-xiU"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpy-Hq-BdM">
-                                                <rect key="frame" x="70" y="-4.5" width="235" height="33"/>
+                                                <rect key="frame" x="70" y="-2.5" width="235" height="29"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
                                             </button>
                                         </subviews>
