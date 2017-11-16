@@ -8,11 +8,13 @@
 
 import UIKit
 
-class SearchListVC: UIViewController {
+class SearchListVC: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTV: UITableView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var hideKeyboardButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,13 @@ class SearchListVC: UIViewController {
         searchListTV.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
         
         segmentControl.sendActions(for: .valueChanged)
+        
+        hideKeyboardButton.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        view.endEditing(true)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -43,6 +52,15 @@ class SearchListVC: UIViewController {
             print("Users")
         }
         searchListTV.reloadData()
+    }
+    
+    @IBAction func hideButton(sender: UIButton) {
+        view.endEditing(true)
+        hideKeyboardButton.isHidden = true
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        hideKeyboardButton.isHidden = false
     }
 }
 
