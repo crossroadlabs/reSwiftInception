@@ -30,6 +30,7 @@ class RepositoriesController: UIViewController {
     
     @IBOutlet weak var eventsBtn: UIButton!
     @IBOutlet weak var ownersBtn: UIButton!
+    @IBOutlet weak var issuesBtn: UIButton!
     
     @IBOutlet var bottomBordersViews: [UIView]!
     
@@ -64,6 +65,14 @@ class RepositoriesController: UIViewController {
             eventsVC.titleText = "Events"
             eventsVC.dataType = .events
             self.navigationController?.pushViewController(eventsVC, animated: true)
+        }
+    }
+    
+    @IBAction func issuesAction(_ sender: UIButton) {
+        if let issuesVC = UIStoryboard(name: "StarredVC", bundle: nil).instantiateViewController(withIdentifier: "StarredVC") as? StarredVC {
+            issuesVC.titleText = "Issues"
+            issuesVC.dataType = .issues
+            self.navigationController?.pushViewController(issuesVC, animated: true)
         }
     }
 }

@@ -40,6 +40,8 @@
 		44CB582D1F96737C00361EE4 /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CB581D1F95037A00361EE4 /* GothamProBold.ttf */; };
 		44CB582E1F96737C00361EE4 /* GothamProBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44CB581E1F95037A00361EE4 /* GothamProBoldItalic.ttf */; };
 		510D901983D6529FC9AECF8D /* Pods_reSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F40A135E97B1C9460B4C4C /* Pods_reSwiftTests.framework */; };
+		5BB6981A1FBE03F200EF79AD /* AddIssue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB698191FBE03F200EF79AD /* AddIssue.storyboard */; };
+		5BB6981C1FBE043F00EF79AD /* AddIssueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6981B1FBE043F00EF79AD /* AddIssueVC.swift */; };
 		5BCDCC711FBB130100BD5C1D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDCC6F1FBB130100BD5C1D /* UserCell.swift */; };
 		5BCDCC721FBB130100BD5C1D /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BCDCC701FBB130100BD5C1D /* UserCell.xib */; };
 		5BD13EC81FBDA94D00882EF0 /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD13EC61FBDA94D00882EF0 /* IssueCell.swift */; };
@@ -94,6 +96,8 @@
 		44CB581E1F95037A00361EE4 /* GothamProBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBoldItalic.ttf; sourceTree = "<group>"; };
 		44CB58201F964B9F00361EE4 /* Repositories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repositories.storyboard; sourceTree = "<group>"; };
 		44CB58231F964DDF00361EE4 /* RepositoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesController.swift; sourceTree = "<group>"; };
+		5BB698191FBE03F200EF79AD /* AddIssue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddIssue.storyboard; sourceTree = "<group>"; };
+		5BB6981B1FBE043F00EF79AD /* AddIssueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssueVC.swift; sourceTree = "<group>"; };
 		5BCDCC6F1FBB130100BD5C1D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		5BCDCC701FBB130100BD5C1D /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		5BD13EC61FBDA94D00882EF0 /* IssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 				4446DB001F97C30000B4CE04 /* SearchListVC.storyboard */,
 				4402CAB01F98C5A700BC1629 /* Profile.storyboard */,
 				443069DE1F98FE6A005C6278 /* StarredVC.storyboard */,
+				5BB698191FBE03F200EF79AD /* AddIssue.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				44CB58231F964DDF00361EE4 /* RepositoriesController.swift */,
 				4402CAB21F98D1A700BC1629 /* ProfileVC.swift */,
 				443069DF1F98FE83005C6278 /* StarredVC.swift */,
+				5BB6981B1FBE043F00EF79AD /* AddIssueVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				44CB582B1F96737C00361EE4 /* GothamProLight.ttf in Resources */,
 				44CB582C1F96737C00361EE4 /* GothamProMedium.ttf in Resources */,
 				443069E81F990822005C6278 /* StaredCell.xib in Resources */,
+				5BB6981A1FBE03F200EF79AD /* AddIssue.storyboard in Resources */,
 				44CB582D1F96737C00361EE4 /* GothamProBold.ttf in Resources */,
 				44CB582E1F96737C00361EE4 /* GothamProBoldItalic.ttf in Resources */,
 				442FF6A51F94BB74003EF318 /* Assets.xcassets in Resources */,
@@ -500,6 +507,7 @@
 				4446DB021F97C30800B4CE04 /* SearchListVC.swift in Sources */,
 				5BD13EC81FBDA94D00882EF0 /* IssueCell.swift in Sources */,
 				442FF69E1F94BB74003EF318 /* AppDelegate.swift in Sources */,
+				5BB6981C1FBE043F00EF79AD /* AddIssueVC.swift in Sources */,
 				44CB58241F964DDF00361EE4 /* RepositoriesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

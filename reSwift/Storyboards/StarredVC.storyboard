@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stared" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-0d-LgH">
-                                                <rect key="frame" x="161" y="25" width="53.5" height="32"/>
+                                                <rect key="frame" x="161.5" y="25" width="53.5" height="32"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -42,12 +42,22 @@
                                                 </constraints>
                                                 <state key="normal" image="back_arrow"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPB-XZ-8KM">
+                                                <rect key="frame" x="342" y="25" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="EYR-Ev-gPb"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Uxm-AU-uke"/>
+                                                </constraints>
+                                                <state key="normal" image="add"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="yYy-cL-o4t" firstAttribute="leading" secondItem="Xoe-PX-6Ko" secondAttribute="leading" constant="8" id="1HA-3S-Uga"/>
                                             <constraint firstAttribute="height" constant="65" id="C9z-xt-BHe"/>
                                             <constraint firstItem="vEL-0d-LgH" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="Jho-pq-ReR"/>
+                                            <constraint firstItem="nPB-XZ-8KM" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="MoO-Qr-bAY"/>
+                                            <constraint firstAttribute="trailing" secondItem="nPB-XZ-8KM" secondAttribute="trailing" constant="8" id="T1s-4l-K8h"/>
                                             <constraint firstAttribute="bottom" secondItem="vEL-0d-LgH" secondAttribute="bottom" constant="8" id="aHc-lx-TaH"/>
                                             <constraint firstItem="vEL-0d-LgH" firstAttribute="centerX" secondItem="Xoe-PX-6Ko" secondAttribute="centerX" id="bIS-Ym-992"/>
                                             <constraint firstItem="yYy-cL-o4t" firstAttribute="top" secondItem="Xoe-PX-6Ko" secondAttribute="top" constant="25" id="mUF-Ug-GqP"/>
@@ -95,7 +105,7 @@
                                     <constraint firstAttribute="trailing" secondItem="hN9-ek-Z9L" secondAttribute="trailing" id="siP-r0-21U"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-cE-4Nv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-cE-4Nv">
                                 <rect key="frame" x="0.0" y="105" width="375" height="562"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -117,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="wsJ-1w-hDy"/>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="nPB-XZ-8KM" id="LyA-5P-8oD"/>
                         <outlet property="backBtn" destination="yYy-cL-o4t" id="63N-Vu-g7S"/>
                         <outlet property="searchBar" destination="1PE-eC-M8O" id="cA8-D5-a4K"/>
                         <outlet property="searchBarViewHeight" destination="9iP-4g-Eex" id="DyW-j8-wL3"/>
@@ -130,6 +141,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="50" height="50"/>
         <image name="back_arrow" width="50" height="50"/>
     </resources>
 </document>
