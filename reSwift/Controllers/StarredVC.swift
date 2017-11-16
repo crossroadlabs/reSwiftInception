@@ -15,13 +15,14 @@ enum VCType {
     case issues
 }
 
-class StarredVC: UIViewController {
+class StarredVC: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTV: UITableView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var hideKeyboardButton: UIButton!
     
     @IBOutlet weak var searchBarViewHeight: NSLayoutConstraint!
     
@@ -43,6 +44,8 @@ class StarredVC: UIViewController {
         
         backBtn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
         addBtn.addTarget(self, action: #selector(addAction), for: .touchUpInside)
+        
+        hideKeyboardButton.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,12 +53,12 @@ class StarredVC: UIViewController {
         backBtn.isHidden = dataType == .starred ? true : false
         addBtn.isHidden = dataType == .issues ? false : true
         switch dataType {
-            case .events:
-                searchBar.isHidden = true
-                searchBarViewHeight.constant = 0
-            default:
-                searchBar.isHidden = false
-                searchBarViewHeight.constant = 40
+        case .events:
+            searchBar.isHidden = true
+            searchBarViewHeight.constant = 0
+        default:
+            searchBar.isHidden = false
+            searchBarViewHeight.constant = 40
         }
     }
     
@@ -77,9 +80,18 @@ class StarredVC: UIViewController {
             self.navigationController?.pushViewController(issueVC, animated: true)
         }
     }
+    
+    @IBAction func hideButton(sender: UIButton) {
+        view.endEditing(true)
+        hideKeyboardButton.isHidden = true
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        hideKeyboardButton.isHidden = false
+    }
 }
 
-extension StarredVC: UITableViewDelegate,UITableViewDataSource {
+extension StarredVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

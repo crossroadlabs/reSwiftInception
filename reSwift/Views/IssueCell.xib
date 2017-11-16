@@ -30,13 +30,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="75" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ow-KK-ADv">
-                                <rect key="frame" x="25" y="8" width="24" height="14.5"/>
+                                <rect key="frame" x="26" y="8" width="22" height="15.5"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="13"/>
                                 <color key="textColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-pW-oHA">
-                                <rect key="frame" x="18" y="30.5" width="39.5" height="19"/>
+                                <rect key="frame" x="19" y="31.5" width="38" height="19"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -66,41 +66,41 @@
                         <rect key="frame" x="83" y="0.0" width="237" height="99.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modular project issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEd-Uz-bfC">
-                                <rect key="frame" x="0.0" y="8" width="140.5" height="14.5"/>
+                                <rect key="frame" x="0.0" y="8" width="125.5" height="15.5"/>
                                 <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="13"/>
                                 <color key="textColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="hQQ-vH-fgA">
-                                <rect key="frame" x="0.0" y="30.5" width="15" height="15"/>
+                                <rect key="frame" x="0.0" y="31.5" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="fN6-25-q7Y"/>
                                     <constraint firstAttribute="height" constant="15" id="i3F-qG-stS"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comments" translatesAutoresizingMaskIntoConstraints="NO" id="48x-PP-DSz">
-                                <rect key="frame" x="111" y="30" width="15" height="15"/>
+                                <rect key="frame" x="111" y="31" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="XA2-Rb-abS"/>
                                     <constraint firstAttribute="height" constant="15" id="ydi-89-FXJ"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="write" translatesAutoresizingMaskIntoConstraints="NO" id="Ewb-YK-HhJ">
-                                <rect key="frame" x="111" y="53" width="15" height="15"/>
+                                <rect key="frame" x="111" y="54" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="NZT-H6-pSo"/>
                                     <constraint firstAttribute="height" constant="15" id="Y4h-F3-NtW"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="DJ6-cF-0cP">
-                                <rect key="frame" x="0.0" y="53.5" width="15" height="15"/>
+                                <rect key="frame" x="0.0" y="54.5" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="15" id="QBy-Oc-1TU"/>
                                     <constraint firstAttribute="height" constant="15" id="Z1n-Tb-ekW"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x84-bb-rNW">
-                                <rect key="frame" x="23" y="30.5" width="80" height="14"/>
+                                <rect key="frame" x="23" y="31.5" width="80" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="hAm-iO-dUz"/>
                                 </constraints>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unassigned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-7a-FfQ">
-                                <rect key="frame" x="23" y="54" width="80" height="14"/>
+                                <rect key="frame" x="23" y="55" width="80" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="gYy-5n-USJ"/>
                                 </constraints>
@@ -118,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo9-n8-XpG">
-                                <rect key="frame" x="134" y="30" width="80" height="14"/>
+                                <rect key="frame" x="134" y="31" width="80" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="29F-cu-CrF"/>
                                 </constraints>
@@ -127,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4E-nl-SWt">
-                                <rect key="frame" x="134" y="54" width="80" height="14"/>
+                                <rect key="frame" x="134" y="55" width="80" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="iTb-ug-4hG"/>
                                 </constraints>
