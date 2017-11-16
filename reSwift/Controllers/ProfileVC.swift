@@ -21,6 +21,7 @@ class ProfileVC: UIViewController {
     
     @IBOutlet var profileTopBorderedViews: [UIView]!
     @IBOutlet var profileBottomBorderedViews: [UIView]!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,10 @@ class ProfileVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        backBtn.isHidden = (self.navigationController?.viewControllers.count ?? 0) > 1 ? false : true
+        let isRootController = self.navigationController?.viewControllers.count ?? 0
+        let isNeedToHide = (isRootController) > 1 ? false : true
+        backBtn.isHidden = isNeedToHide
+        logoutButton.isHidden = !isNeedToHide
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -63,5 +67,9 @@ class ProfileVC: UIViewController {
             eventsVC.dataType = .events
             self.navigationController?.pushViewController(eventsVC, animated: true)
         }
+    }
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        tabBarController?.dismiss(animated: true, completion: nil)
     }
 }

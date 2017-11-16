@@ -22,6 +22,13 @@ class SignInController: UIViewController, UITextFieldDelegate {
         signInButton.isEnabled = false
         signInButton.backgroundColor = .gray
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        for txtField in [emailTextField, passwordTextField] {
+            txtField?.text = ""
+        }
+    }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
