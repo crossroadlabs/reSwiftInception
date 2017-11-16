@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="enh-Ua-3yo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="enh-Ua-3yo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,18 +14,18 @@
         <array key="GothamProBold.ttf">
             <string>GothamPro-Bold</string>
         </array>
-        <array key="GothamProLight.ttf">
-            <string>GothamPro-Light</string>
-        </array>
         <array key="GothamProMedium.ttf">
             <string>GothamPro-Medium</string>
+        </array>
+        <array key="GothamProRegular.ttf">
+            <string>GothamPro</string>
         </array>
     </customFonts>
     <scenes>
         <!--ProfileVC-->
         <scene sceneID="eNw-Jj-BQq">
             <objects>
-                <viewController id="enh-Ua-3yo" customClass="ProfileVC" customModule="reSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="enh-Ua-3yo" customClass="ProfileVC" customModule="reSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JYm-Ht-xKt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mortyProfile" translatesAutoresizingMaskIntoConstraints="NO" id="euU-gC-eBw">
-                                        <rect key="frame" x="138" y="65" width="100" height="100"/>
+                                        <rect key="frame" x="138" y="63.5" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="euU-gC-eBw" secondAttribute="height" multiplier="1:1" id="FI2-Ag-O8k"/>
                                             <constraint firstAttribute="width" constant="100" id="jVe-q7-o2i"/>
@@ -50,14 +50,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKk-vV-e6c">
-                                        <rect key="frame" x="152.5" y="184" width="71" height="27"/>
+                                        <rect key="frame" x="157" y="182.5" width="62.5" height="28"/>
                                         <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morty Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvz-oD-quj">
-                                        <rect key="frame" x="145" y="221" width="85" height="16"/>
-                                        <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
+                                        <rect key="frame" x="150" y="220.5" width="77" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -65,14 +65,14 @@
                                         <rect key="frame" x="0.0" y="254" width="188" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n6-e7-NEK">
-                                                <rect key="frame" x="20" y="11" width="45" height="21.5"/>
+                                                <rect key="frame" x="20" y="8" width="40.5" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-ki-1ww">
-                                                <rect key="frame" x="20" y="32.5" width="66" height="16"/>
-                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
+                                                <rect key="frame" x="20" y="36" width="60.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -94,14 +94,14 @@
                                         <rect key="frame" x="187" y="254" width="188" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggn-8M-vCz">
-                                                <rect key="frame" x="20" y="11" width="46" height="21.5"/>
+                                                <rect key="frame" x="20" y="8" width="40.5" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlB-wb-Wmj">
-                                                <rect key="frame" x="20" y="32.5" width="67" height="16"/>
-                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
+                                                <rect key="frame" x="20" y="36" width="60" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -119,12 +119,21 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNd-Tq-Zwk">
+                                        <rect key="frame" x="4" y="25" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Auf-3a-FZW"/>
+                                            <constraint firstAttribute="width" constant="25" id="p21-dL-9X9"/>
+                                        </constraints>
+                                        <state key="normal" image="back_arrow"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.56470588235294117" green="0.16862745098039217" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="vvz-oD-quj" firstAttribute="top" secondItem="eKk-vV-e6c" secondAttribute="bottom" constant="10" id="646-rG-Sue"/>
                                     <constraint firstItem="aVO-JV-J7X" firstAttribute="width" secondItem="a5U-rW-X8F" secondAttribute="width" id="9aM-pQ-Kvh"/>
                                     <constraint firstAttribute="bottom" secondItem="a5U-rW-X8F" secondAttribute="bottom" id="9gh-Rc-VzV"/>
+                                    <constraint firstItem="JNd-Tq-Zwk" firstAttribute="leading" secondItem="gN4-UE-uQT" secondAttribute="leading" constant="4" id="EjF-ol-5DJ"/>
                                     <constraint firstItem="aVO-JV-J7X" firstAttribute="leading" secondItem="a5U-rW-X8F" secondAttribute="trailing" constant="-1" id="GOs-Md-wzP"/>
                                     <constraint firstItem="eKk-vV-e6c" firstAttribute="top" secondItem="euU-gC-eBw" secondAttribute="bottom" constant="19" id="HyL-ae-jFl"/>
                                     <constraint firstAttribute="trailing" secondItem="aVO-JV-J7X" secondAttribute="trailing" id="InN-Fl-XFD"/>
@@ -132,6 +141,7 @@
                                     <constraint firstAttribute="bottom" secondItem="aVO-JV-J7X" secondAttribute="bottom" id="NRz-Cw-Yua"/>
                                     <constraint firstItem="vvz-oD-quj" firstAttribute="centerX" secondItem="gN4-UE-uQT" secondAttribute="centerX" id="Or7-jm-hYA"/>
                                     <constraint firstItem="euU-gC-eBw" firstAttribute="centerX" secondItem="gN4-UE-uQT" secondAttribute="centerX" id="a7C-cZ-RKj"/>
+                                    <constraint firstItem="JNd-Tq-Zwk" firstAttribute="top" secondItem="gN4-UE-uQT" secondAttribute="top" constant="25" id="jK9-hZ-1dr"/>
                                     <constraint firstItem="a5U-rW-X8F" firstAttribute="top" secondItem="vvz-oD-quj" secondAttribute="bottom" constant="17" id="kR6-kV-aN3"/>
                                     <constraint firstItem="eKk-vV-e6c" firstAttribute="centerX" secondItem="gN4-UE-uQT" secondAttribute="centerX" id="sui-X3-II3"/>
                                     <constraint firstItem="aVO-JV-J7X" firstAttribute="top" secondItem="a5U-rW-X8F" secondAttribute="top" id="tqS-Bk-gO6"/>
@@ -160,18 +170,25 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-yD-qXu">
-                                                <rect key="frame" x="58" y="15" width="46.5" height="16"/>
-                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
+                                                <rect key="frame" x="58" y="15" width="42.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3X-4c-kGb">
+                                                <rect key="frame" x="0.0" y="-0.5" width="375" height="45"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="cfK-L7-5fn" firstAttribute="leading" secondItem="4uP-MM-LuT" secondAttribute="leading" constant="19" id="33D-ph-phs"/>
                                             <constraint firstItem="Wbf-yD-qXu" firstAttribute="centerY" secondItem="4uP-MM-LuT" secondAttribute="centerY" id="Dkr-dm-xTY"/>
+                                            <constraint firstAttribute="trailing" secondItem="m3X-4c-kGb" secondAttribute="trailing" id="E4g-f0-aAC"/>
                                             <constraint firstItem="cfK-L7-5fn" firstAttribute="centerY" secondItem="4uP-MM-LuT" secondAttribute="centerY" id="SQu-0u-FoT"/>
+                                            <constraint firstItem="m3X-4c-kGb" firstAttribute="top" secondItem="4uP-MM-LuT" secondAttribute="top" id="WLv-j5-wqW"/>
                                             <constraint firstItem="Wbf-yD-qXu" firstAttribute="leading" secondItem="4uP-MM-LuT" secondAttribute="leading" constant="58" id="abM-VF-TW8"/>
+                                            <constraint firstAttribute="bottom" secondItem="m3X-4c-kGb" secondAttribute="bottom" id="dNz-dL-vjr"/>
+                                            <constraint firstItem="m3X-4c-kGb" firstAttribute="leading" secondItem="4uP-MM-LuT" secondAttribute="leading" id="jue-5f-sQO"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -205,18 +222,25 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repositories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bar-RA-ErG">
-                                                <rect key="frame" x="58" y="14" width="85.5" height="16"/>
-                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="14"/>
+                                                <rect key="frame" x="58" y="14" width="78.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="14"/>
                                                 <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLT-JB-r8v">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="XLT-JB-r8v" secondAttribute="bottom" id="14H-wk-yKR"/>
+                                            <constraint firstAttribute="trailing" secondItem="XLT-JB-r8v" secondAttribute="trailing" id="4JK-wX-JfT"/>
                                             <constraint firstItem="27Q-fm-bHU" firstAttribute="centerY" secondItem="Pp4-d1-TsP" secondAttribute="centerY" id="5nt-r2-zBQ"/>
                                             <constraint firstItem="bar-RA-ErG" firstAttribute="leading" secondItem="Pp4-d1-TsP" secondAttribute="leading" constant="58" id="J4d-RW-xC1"/>
                                             <constraint firstItem="bar-RA-ErG" firstAttribute="centerY" secondItem="Pp4-d1-TsP" secondAttribute="centerY" id="fyt-1n-0Xl"/>
                                             <constraint firstItem="27Q-fm-bHU" firstAttribute="leading" secondItem="Pp4-d1-TsP" secondAttribute="leading" constant="19" id="jDE-0B-LYX"/>
+                                            <constraint firstItem="XLT-JB-r8v" firstAttribute="top" secondItem="Pp4-d1-TsP" secondAttribute="top" id="l7X-86-uz0"/>
+                                            <constraint firstItem="XLT-JB-r8v" firstAttribute="leading" secondItem="Pp4-d1-TsP" secondAttribute="leading" id="sA7-im-syZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -256,11 +280,14 @@
                         <viewLayoutGuide key="safeArea" id="v2I-Es-ZQq"/>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="JNd-Tq-Zwk" id="HZw-T9-xfn"/>
+                        <outlet property="eventsBtn" destination="m3X-4c-kGb" id="nwT-hd-MA0"/>
                         <outlet property="followersCount" destination="6n6-e7-NEK" id="7VC-Gu-pzM"/>
                         <outlet property="followingCount" destination="Ggn-8M-vCz" id="mMr-cn-yvD"/>
                         <outlet property="profileFullName" destination="vvz-oD-quj" id="VjY-Es-eOr"/>
                         <outlet property="profileImage" destination="euU-gC-eBw" id="KOQ-GE-OI0"/>
                         <outlet property="profileName" destination="eKk-vV-e6c" id="3Ux-oa-dh6"/>
+                        <outlet property="repoBtn" destination="XLT-JB-r8v" id="1lS-cw-pqc"/>
                         <outletCollection property="profileTopBorderedViews" destination="a5U-rW-X8F" collectionClass="NSMutableArray" id="NgJ-WH-AIE"/>
                         <outletCollection property="profileTopBorderedViews" destination="aVO-JV-J7X" collectionClass="NSMutableArray" id="0jQ-Ed-Nhh"/>
                         <outletCollection property="profileBottomBorderedViews" destination="KFn-8k-a9m" collectionClass="NSMutableArray" id="hzT-R0-WPi"/>
@@ -273,6 +300,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_arrow" width="50" height="50"/>
         <image name="events" width="24" height="25"/>
         <image name="mortyProfile" width="196" height="196"/>
         <image name="open-folder" width="22" height="22"/>

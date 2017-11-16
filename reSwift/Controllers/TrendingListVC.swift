@@ -18,7 +18,8 @@ class TrendingListVC: UIViewController {
         super.viewDidLoad()
         trendingTV.delegate = self
         trendingTV.dataSource = self
-        trendingTV.register(UINib(nibName: "TrendingListCell", bundle: nil), forCellReuseIdentifier: "TrendingListCell")
+        trendingTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
+        
         segmentFilter.sendActions(for: .valueChanged)
     }
     
@@ -57,13 +58,15 @@ extension TrendingListVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "TrendingListCell") as? TrendingListCell {
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
+            return cell
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
+         self.navigationController?.pushViewController(repoVC, animated: true)
+        }
     }
 }

@@ -28,6 +28,9 @@ class RepositoriesController: UIViewController {
     @IBOutlet weak var eventsLabel: UILabel!
     @IBOutlet weak var issuesLabel: UILabel!
     
+    @IBOutlet weak var eventsBtn: UIButton!
+    @IBOutlet weak var ownersBtn: UIButton!
+    
     @IBOutlet var bottomBordersViews: [UIView]!
     
     override func viewDidLoad() {
@@ -41,21 +44,26 @@ class RepositoriesController: UIViewController {
             view.layer.borderColor = UIColor(white: 223.0 / 255.0, alpha: 1.0).cgColor
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+    @IBAction func ownersAction(_ sender: UIButton) {
+        if let profileVC = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }
+    }
+    
+    @IBAction func eventsAction(_ sender: UIButton) {
+        if let eventsVC = UIStoryboard(name: "StarredVC", bundle: nil).instantiateViewController(withIdentifier: "StarredVC") as? StarredVC {
+            eventsVC.titleText = "Events"
+            eventsVC.dataType = .events
+            self.navigationController?.pushViewController(eventsVC, animated: true)
+        }
+    }
 }

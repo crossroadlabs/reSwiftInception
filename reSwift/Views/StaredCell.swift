@@ -1,14 +1,14 @@
 //
-//  TrendingListCell.swift
+//  StaredCell.swift
 //  reSwift
 //
-//  Created by Roman Stolyarchuk on 10/17/17.
+//  Created by Ruslan Yupyn on 10/19/17.
 //  Copyright © 2017 Crossroad Labs s.r.o. All rights reserved.
 //
 
 import UIKit
 
-class TrendingListCell: UITableViewCell {
+class StaredCell: UITableViewCell {
     
     @IBOutlet weak var avatarIV: UIImageView! {
         didSet {
@@ -18,10 +18,8 @@ class TrendingListCell: UITableViewCell {
     }
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var detailLbl: UILabel!
-    @IBOutlet weak var staredCountLbl: UILabel!
-    @IBOutlet weak var lovedCountLbl: UILabel!
-    @IBOutlet weak var sharedCountLbl: UILabel!
-
+    @IBOutlet weak var timeAgoLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -8,11 +8,13 @@
 
 import UIKit
 
-class SearchListVC: UIViewController {
+class SearchListVC: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTV: UITableView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var hideKeyboardButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,17 @@ class SearchListVC: UIViewController {
         
         searchListTV.delegate = self
         searchListTV.dataSource = self
+        searchListTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
+        searchListTV.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
         
         segmentControl.sendActions(for: .valueChanged)
+        
+        hideKeyboardButton.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        view.endEditing(true)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -40,6 +51,16 @@ class SearchListVC: UIViewController {
         {
             print("Users")
         }
+        searchListTV.reloadData()
+    }
+    
+    @IBAction func hideButton(sender: UIButton) {
+        view.endEditing(true)
+        hideKeyboardButton.isHidden = true
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        hideKeyboardButton.isHidden = false
     }
 }
 
@@ -50,39 +71,32 @@ extension SearchListVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if segmentControl.selectedSegmentIndex == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
+                return cell
+            }
+        } else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserCell {
+                return cell
+            }
+        }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-}
-
-extension UISearchBar {
-    func changeSearchBarColor(color : UIColor) {
-        for subView in self.subviews {
-            for subSubView in subView.subviews {
-                if subSubView.conforms(to: UITextInputTraits.self) {
-                    let textField = subSubView as! UITextField
-                    textField.backgroundColor = color
-                    break
-                }
+        if segmentControl.selectedSegmentIndex == 0 {
+            if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
+                self.navigationController?.pushViewController(repoVC, animated: true)
+            }
+        } else {
+            if let profileVC = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+                self.navigationController?.pushViewController(profileVC, animated: true)
             }
         }
-    }
-    
-    func changeSearchTextColor(color: UIColor) {
-        if let textFieldInsideSearchBar = self.value(forKey: "searchField") as? UITextField {
-            textFieldInsideSearchBar.textColor = color
-        }
-    }
-    
-    func clearBackground() {
-        self.backgroundImage = UIImage()
-        self.barTintColor = .clear
+        
     }
 }
