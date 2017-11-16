@@ -14,12 +14,13 @@ enum VCType {
     case events
 }
 
-class StarredVC: UIViewController {
+class StarredVC: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTV: UITableView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var hideKeyboardButton: UIButton!
     
     @IBOutlet weak var searchBarViewHeight: NSLayoutConstraint!
     
@@ -39,18 +40,20 @@ class StarredVC: UIViewController {
         searchListTV.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
         
         backBtn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+        
+        hideKeyboardButton.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         titleLbl.text = titleText
         backBtn.isHidden = dataType == .starred ? true : false
         switch dataType {
-            case .events:
-                searchBar.isHidden = true
-                searchBarViewHeight.constant = 0
-            default:
-                searchBar.isHidden = false
-                searchBarViewHeight.constant = 40
+        case .events:
+            searchBar.isHidden = true
+            searchBarViewHeight.constant = 0
+        default:
+            searchBar.isHidden = false
+            searchBarViewHeight.constant = 40
         }
     }
     
@@ -65,6 +68,15 @@ class StarredVC: UIViewController {
     
     @objc func backAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func hideButton(sender: UIButton) {
+        view.endEditing(true)
+        hideKeyboardButton.isHidden = true
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        hideKeyboardButton.isHidden = false
     }
 }
 
@@ -101,11 +113,13 @@ extension StarredVC: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch dataType {
-            case .starred: break
-            case .events: break
-            case .repositories:
-                if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
-                    self.navigationController?.pushViewController(repoVC, animated: true)
+        case .starred:
+            break
+        case .events:
+            break
+        case .repositories:
+            if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
+                self.navigationController?.pushViewController(repoVC, animated: true)
             }
         }
     }

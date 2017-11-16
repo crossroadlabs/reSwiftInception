@@ -47,7 +47,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssz-d8-b1z">
-                                        <rect key="frame" x="154.5" y="189.5" width="66.5" height="22.5"/>
+                                        <rect key="frame" x="155" y="189.5" width="66.5" height="22.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22.5" id="LmE-F9-4Rv"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N60-7A-c6V">
-                                        <rect key="frame" x="152.5" y="222" width="71.5" height="16"/>
+                                        <rect key="frame" x="152" y="222" width="71.5" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="TN8-Aa-hlr"/>
                                         </constraints>
