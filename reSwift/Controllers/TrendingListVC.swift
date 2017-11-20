@@ -7,12 +7,32 @@
 //
 
 import UIKit
+import ActionSheetPicker_3_0
 
 class TrendingListVC: UIViewController {
     
     @IBOutlet weak var languagesBtn: UIButton!
     @IBOutlet weak var segmentFilter: UISegmentedControl!
     @IBOutlet weak var trendingTV: UITableView!
+    @IBOutlet weak var languagesLabel: UILabel!
+    
+    let languages: [String] = [
+        "All Languages",
+        "JavaScript",
+        "Java",
+        "C++",
+        "Python",
+        "PHP",
+        "C",
+        "C#",
+        "Ruby",
+        "Go",
+        "HTML",
+        "Swift",
+        "Objective-C",
+        "Scala",
+        "perl"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +63,12 @@ class TrendingListVC: UIViewController {
     }
     
     @IBAction func languageBtnAction(sender: UIButton) {
-        print("Language button pressed")
+        ActionSheetMultipleStringPicker.show(withTitle: "Multiple String Picker", rows: [languages], initialSelection: [2], doneBlock: {
+                picker, indexes, values in
+            let index: Int = indexes!.first as! Int
+            self.languagesLabel.text = self.languages[index]
+            return
+        }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
     }
 }
 
