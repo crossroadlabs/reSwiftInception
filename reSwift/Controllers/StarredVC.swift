@@ -12,6 +12,7 @@ enum VCType {
     case starred
     case repositories
     case events
+    case issues
 }
 
 class StarredVC: UIViewController, UISearchBarDelegate {
@@ -20,6 +21,7 @@ class StarredVC: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var searchListTV: UITableView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var hideKeyboardButton: UIButton!
     
     @IBOutlet weak var searchBarViewHeight: NSLayoutConstraint!
@@ -38,8 +40,10 @@ class StarredVC: UIViewController, UISearchBarDelegate {
         searchListTV.register(UINib(nibName: "StaredCell", bundle: nil), forCellReuseIdentifier: "StaredCell")
         searchListTV.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "SearchCell")
         searchListTV.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        searchListTV.register(UINib(nibName: "IssueCell", bundle: nil), forCellReuseIdentifier: "IssueCell")
         
         backBtn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+        addBtn.addTarget(self, action: #selector(addAction), for: .touchUpInside)
         
         hideKeyboardButton.isHidden = true
     }
@@ -47,6 +51,7 @@ class StarredVC: UIViewController, UISearchBarDelegate {
     override func viewWillAppear(_ animated: Bool) {
         titleLbl.text = titleText
         backBtn.isHidden = dataType == .starred ? true : false
+        addBtn.isHidden = dataType == .issues ? false : true
         switch dataType {
         case .events:
             searchBar.isHidden = true
@@ -70,6 +75,12 @@ class StarredVC: UIViewController, UISearchBarDelegate {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @objc func addAction(_ sender: UIButton) {
+        if let issueVC = UIStoryboard(name: "AddIssue", bundle: nil).instantiateViewController(withIdentifier: "AddIssueVC") as? AddIssueVC {
+            self.navigationController?.pushViewController(issueVC, animated: true)
+        }
+    }
+    
     @IBAction func hideButton(sender: UIButton) {
         view.endEditing(true)
         hideKeyboardButton.isHidden = true
@@ -80,7 +91,7 @@ class StarredVC: UIViewController, UISearchBarDelegate {
     }
 }
 
-extension StarredVC: UITableViewDelegate,UITableViewDataSource {
+extension StarredVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -107,19 +118,22 @@ extension StarredVC: UITableViewDelegate,UITableViewDataSource {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell {
                     return cell
                 }
+            case .issues:
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "IssueCell") as? IssueCell {
+                    return cell
+            }
         }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch dataType {
-        case .starred:
-            break
-        case .events:
-            break
-        case .repositories:
-            if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
-                self.navigationController?.pushViewController(repoVC, animated: true)
+            case .starred: break
+            case .events: break
+            case .issues: break
+            case .repositories:
+                if let repoVC = UIStoryboard(name: "Repositories", bundle: nil).instantiateViewController(withIdentifier: "RepositoriesController") as? RepositoriesController {
+                    self.navigationController?.pushViewController(repoVC, animated: true)
             }
         }
     }
