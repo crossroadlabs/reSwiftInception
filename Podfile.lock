@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: f55c7945c6cafdd0e4674ed3859d2883ff4754f5
+PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
+  - TPKeyboardAvoiding (1.3.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+
+PODFILE CHECKSUM: c087a623377874169a807524361739c9144e47a3
 
 COCOAPODS: 1.3.1
