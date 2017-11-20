@@ -17,9 +17,11 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var followingCount: UILabel!
     @IBOutlet weak var repoBtn: UIButton!
     @IBOutlet weak var eventsBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     
     @IBOutlet var profileTopBorderedViews: [UIView]!
     @IBOutlet var profileBottomBorderedViews: [UIView]!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +35,22 @@ class ProfileVC: UIViewController {
         
         repoBtn.addTarget(self, action: #selector(repoAction), for: .touchUpInside)
         eventsBtn.addTarget(self, action: #selector(eventsAction), for: .touchUpInside)
+        backBtn.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let isRootController = self.navigationController?.viewControllers.count ?? 0
+        let isNeedToHide = (isRootController) > 1 ? false : true
+        backBtn.isHidden = isNeedToHide
+        logoutButton.isHidden = !isNeedToHide
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    @objc func backAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func repoAction(_ sender: UIButton) {
@@ -53,5 +67,9 @@ class ProfileVC: UIViewController {
             eventsVC.dataType = .events
             self.navigationController?.pushViewController(eventsVC, animated: true)
         }
+    }
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        tabBarController?.dismiss(animated: true, completion: nil)
     }
 }

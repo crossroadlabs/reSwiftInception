@@ -57,6 +57,9 @@
                                                     <string>Title</string>
                                                     <string>Title</string>
                                                 </scopeButtonTitles>
+                                                <connections>
+                                                    <outlet property="delegate" destination="heI-8s-Phc" id="RFm-hk-taf"/>
+                                                </connections>
                                             </searchBar>
                                         </subviews>
                                         <color key="backgroundColor" red="0.52156862749999999" green="0.078431372550000003" blue="0.039215686270000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,20 +90,32 @@
                                     <outlet property="delegate" destination="heI-8s-Phc" id="cHg-3i-Qzg"/>
                                 </connections>
                             </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5s-bm-s9C">
+                                <rect key="frame" x="0.0" y="105" width="375" height="562"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="hideButtonWithSender:" destination="heI-8s-Phc" eventType="touchUpInside" id="Qut-jw-r72"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QlU-4H-g1g" firstAttribute="top" secondItem="kR4-BK-maT" secondAttribute="top" id="1ab-m8-RMf"/>
                             <constraint firstItem="wsJ-1w-hDy" firstAttribute="trailing" secondItem="qYF-cE-4Nv" secondAttribute="trailing" id="3cB-jL-CGC"/>
+                            <constraint firstItem="l5s-bm-s9C" firstAttribute="bottom" secondItem="qYF-cE-4Nv" secondAttribute="bottom" id="43p-g7-EO2"/>
                             <constraint firstItem="QlU-4H-g1g" firstAttribute="leading" secondItem="wsJ-1w-hDy" secondAttribute="leading" id="JBR-YW-CoU"/>
                             <constraint firstItem="qYF-cE-4Nv" firstAttribute="leading" secondItem="wsJ-1w-hDy" secondAttribute="leading" id="N6n-Jy-rQ9"/>
+                            <constraint firstItem="l5s-bm-s9C" firstAttribute="top" secondItem="qYF-cE-4Nv" secondAttribute="top" id="PeY-YJ-zFs"/>
                             <constraint firstItem="qYF-cE-4Nv" firstAttribute="top" secondItem="QlU-4H-g1g" secondAttribute="bottom" id="aTS-A0-QmZ"/>
+                            <constraint firstItem="l5s-bm-s9C" firstAttribute="trailing" secondItem="qYF-cE-4Nv" secondAttribute="trailing" id="bQB-yN-lCW"/>
+                            <constraint firstItem="l5s-bm-s9C" firstAttribute="leading" secondItem="qYF-cE-4Nv" secondAttribute="leading" id="elf-M5-ZdN"/>
                             <constraint firstItem="QlU-4H-g1g" firstAttribute="trailing" secondItem="wsJ-1w-hDy" secondAttribute="trailing" id="gRu-3k-US8"/>
                             <constraint firstItem="wsJ-1w-hDy" firstAttribute="bottom" secondItem="qYF-cE-4Nv" secondAttribute="bottom" id="tLi-D5-CSN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wsJ-1w-hDy"/>
                     </view>
                     <connections>
+                        <outlet property="hideKeyboardButton" destination="l5s-bm-s9C" id="caC-zc-Ul7"/>
                         <outlet property="searchBar" destination="1PE-eC-M8O" id="cA8-D5-a4K"/>
                         <outlet property="searchListTV" destination="qYF-cE-4Nv" id="3m3-s5-5rH"/>
                         <outlet property="segmentControl" destination="Cpf-Jp-8wf" id="T7n-QI-AUM"/>

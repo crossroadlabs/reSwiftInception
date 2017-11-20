@@ -28,6 +28,10 @@ class RepositoriesController: UIViewController {
     @IBOutlet weak var eventsLabel: UILabel!
     @IBOutlet weak var issuesLabel: UILabel!
     
+    @IBOutlet weak var eventsBtn: UIButton!
+    @IBOutlet weak var ownersBtn: UIButton!
+    @IBOutlet weak var issuesBtn: UIButton!
+    
     @IBOutlet var bottomBordersViews: [UIView]!
     
     override func viewDidLoad() {
@@ -45,13 +49,30 @@ class RepositoriesController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func backAction(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func ownersAction(_ sender: UIButton) {
+        if let profileVC = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+            self.navigationController?.pushViewController(profileVC, animated: true)
+        }
+    }
+    
+    @IBAction func eventsAction(_ sender: UIButton) {
+        if let eventsVC = UIStoryboard(name: "StarredVC", bundle: nil).instantiateViewController(withIdentifier: "StarredVC") as? StarredVC {
+            eventsVC.titleText = "Events"
+            eventsVC.dataType = .events
+            self.navigationController?.pushViewController(eventsVC, animated: true)
+        }
+    }
+    
+    @IBAction func issuesAction(_ sender: UIButton) {
+        if let issuesVC = UIStoryboard(name: "StarredVC", bundle: nil).instantiateViewController(withIdentifier: "StarredVC") as? StarredVC {
+            issuesVC.titleText = "Issues"
+            issuesVC.dataType = .issues
+            self.navigationController?.pushViewController(issuesVC, animated: true)
+        }
     }
 }
